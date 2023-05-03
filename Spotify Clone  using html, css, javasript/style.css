@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: rgb(169, 169, 247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar start here */
+nav {
+    font: 1em sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    background-color: black;
+    color: white;
+
+}
+
+nav ul li {
+    padding: 0 22px;
+}
+
+.brand img {
+    width: 64px;
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+/* navbar end here */
+
+/* main cointainer start here */
+
+.container {
+    /* min-height: 92vh; */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 90%;
+    height: 48rem;
+    border-radius: 14px;
+    padding: 38px;
+    background-image: url(/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top right;
+    margin-top: 100px;
+}
+
+.animation {
+    color: rgb(11, 234, 11);
+    animation: aagepiche 2s linear infinite;
+    animation-duration: alternate;
+}
+
+.container h1 {
+    padding-left: 20px;
+    padding-bottom: 15px;
+
+}
+
+/* card cointainer1 */
+
+.songItemContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94rem;
+    /* background :rgb(11, 234, 11); */
+
+}
+
+/* card cointainer2 */
+
+.songitemCointainer2 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94rem;
+
+}
+
+
+/* card size */
+.songItem {
+    height: 320px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6, 6, 6);
+
+    color: rgb(255, 255, 255);
+    margin: 12px 0;
+    border-radius: 15px;
+
+
+}
+
+.songItem:hover {
+    background-color: rgb(23, 23, 23);
+}
+
+/* card img size */
+.songItem img {
+    /* width: 43px;
+    margin: 0 23px;
+    border-radius: 34px; */
+    height: 200px;
+    width: 210px;
+    padding-left: 22px;
+    padding-top: 19px;
+    border-radius: 35px;
+}
+
+.songName {
+    font: 1em sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 7px 23px;
+    padding-top: 12px;
+
+}
+
+
+.timestamp {
+    display: flex;
+    margin: 0 23px;
+    justify-content: flex-end;
+    gap: 9px;
+    padding-top: 0px;
+}
+
+.timestamp i {
+    cursor: pointer;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: rgb(11, 234, 11)
+}
+
+.timestamp i:hover {
+    font-size: 50px;
+    overflow: hidden;
+
+}
+
+/* main cointainer end here */
+
+
+/* button start here */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    width: 100px;
+}
+
+@keyframes aagepiche {
+    from {
+        padding-left: 3rem;
+    }
+
+    to {
+        padding-right: 3rem;
+    }
+}
